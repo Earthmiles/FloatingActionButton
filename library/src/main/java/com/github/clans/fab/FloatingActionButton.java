@@ -95,6 +95,10 @@ public class FloatingActionButton extends ImageButton {
     private boolean mShouldSetProgress;
     private int mProgressMax = 100;
     private boolean mShowProgressBackground;
+    
+    public void setIconSize(int dp){
+        mIconSize = Util.dpToPx(getContext(), (float) dp);
+    }
 
     public FloatingActionButton(Context context) {
         this(context, null);
