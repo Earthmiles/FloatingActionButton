@@ -109,6 +109,10 @@ public class FloatingActionMenu extends ViewGroup {
     public interface OnMenuToggleListener {
         void onMenuToggle(boolean opened);
     }
+    
+    public FloatingActionButton getMenuButton(){
+        return mMenuButton;
+    }
 
     public FloatingActionMenu(Context context) {
         this(context, null);
